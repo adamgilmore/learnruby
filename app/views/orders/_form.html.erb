@@ -1,0 +1,13 @@
+<%= form_for([@product, @product.orders.build]) do |f| %>
+	<p>
+		<%= f.label :customer %><br/>
+		<%= f.text_field :customer %>
+	</p>
+	<p>
+		<%= f.label :count %><br/>
+		<%= f.text_field :count %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
